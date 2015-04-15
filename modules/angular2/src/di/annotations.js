@@ -9,6 +9,7 @@ import {CONST} from "angular2/src/facade/lang";
  * }
  * ```
  *
+ * @exportedAs angular2/di_annotations
  */
 export class Inject {
   token;
@@ -29,6 +30,7 @@ export class Inject {
  * }
  * ```
  *
+ * @exportedAs angular2/di_annotations
  */
 export class InjectPromise {
   token;
@@ -49,6 +51,7 @@ export class InjectPromise {
  * }
  * ```
  *
+ * @exportedAs angular2/di_annotations
  */
 export class InjectLazy {
   token;
@@ -69,6 +72,7 @@ export class InjectLazy {
  * }
  * ```
  *
+ * @exportedAs angular2/di_annotations
  */
 export class Optional {
   @CONST()
@@ -102,6 +106,7 @@ export class Optional {
  * The framework can use `new Parent()` to handle the `aService` dependency
  * in a specific way.
  *
+ * @exportedAs angular2/di_annotations
  */
 export class DependencyAnnotation {
   @CONST()
@@ -114,8 +119,7 @@ export class DependencyAnnotation {
 }
 
 /**
- * A class annotation that marks a class as available to `Injector`s for
- * creation.
+ * A class annotation that marks a class as available to `Injector`s for creation.
  *
  * ```
  * class NeedsService {
@@ -125,6 +129,7 @@ export class DependencyAnnotation {
  * @Injectable
  * class UsefulService {}
  * ```
+ * @exportedAs angular2/di_annotations
  */
 export class Injectable {
   @CONST()

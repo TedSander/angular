@@ -1,3 +1,6 @@
+/**
+ * @exportedAs angular2/di
+ */
 export class OpaqueToken {
   _desc:string;
 

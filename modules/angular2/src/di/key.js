@@ -2,6 +2,9 @@ import {KeyMetadataError} from './exceptions';
 import {MapWrapper, Map} from 'angular2/src/facade/collection';
 import {int, isPresent} from 'angular2/src/facade/lang';
 
+/**
+ * @exportedAs angular2/di
+ */
 export class Key {
   token;
   id:int;
@@ -29,6 +32,9 @@ export class Key {
   }
 }
 
+/**
+ * @exportedAs angular2/di
+ */
 export class KeyRegistry {
   _allKeys:Map;
   constructor() {

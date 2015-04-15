@@ -24,8 +24,14 @@ function constructResolvingPath(keys:List) {
   }
 }
 
+/**
+ * @exportedAs angular2/di_errors
+ */
 export class KeyMetadataError extends Error {}
 
+/**
+ * @exportedAs angular2/di_errors
+ */
 export class ProviderError extends Error {
   keys:List;
   constructResolvingMessage:Function;
@@ -49,6 +55,9 @@ export class ProviderError extends Error {
   }
 }
 
+/**
+ * @exportedAs angular2/di_errors
+ */
 export class NoProviderError extends ProviderError {
   // TODO(tbosch): Can't do key:Key as this results in a circular dependency!
   constructor(key) {
@@ -59,6 +68,9 @@ export class NoProviderError extends ProviderError {
   }
 }
 
+/**
+ * @exportedAs angular2/di_errors
+ */
 export class AsyncBindingError extends ProviderError {
   // TODO(tbosch): Can't do key:Key as this results in a circular dependency!
   constructor(key) {
@@ -70,6 +82,9 @@ export class AsyncBindingError extends ProviderError {
   }
 }
 
+/**
+ * @exportedAs angular2/di_errors
+ */
 export class CyclicDependencyError extends ProviderError {
   // TODO(tbosch): Can't do key:Key as this results in a circular dependency!
   constructor(key) {
@@ -79,6 +94,9 @@ export class CyclicDependencyError extends ProviderError {
   }
 }
 
+/**
+ * @exportedAs angular2/di_errors
+ */
 export class InstantiationError extends ProviderError {
   // TODO(tbosch): Can't do key:Key as this results in a circular dependency!
   constructor(originalException, key) {
@@ -90,6 +108,9 @@ export class InstantiationError extends ProviderError {
   }
 }
 
+/**
+ * @exportedAs angular2/di_errors
+ */
 export class InvalidBindingError extends Error {
   message:string;
   constructor(binding) {
@@ -102,6 +123,9 @@ export class InvalidBindingError extends Error {
   }
 }
 
+/**
+ * @exportedAs angular2/di_errors
+ */
 export class NoAnnotationError extends Error {
   message:string;
   constructor(typeOrFunc) {

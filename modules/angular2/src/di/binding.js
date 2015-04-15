@@ -29,6 +29,8 @@ var _EMPTY_LIST = [];  // TODO: make const when supported
 
 /**
  * Declaration of a dependency binding.
+ * 
+ * @exportedAs angular2/di
  */
 export class Binding {
   token;
@@ -107,6 +109,8 @@ export class ResolvedBinding {
 
 /**
  * Provides fluent API for imperative construction of [Binding] objects.
+ * 
+ * @exportedAs angular2/di
  */
 export function bind(token):BindingBuilder {
   return new BindingBuilder(token);
@@ -114,6 +118,7 @@ export function bind(token):BindingBuilder {
 
 /**
  * Helper class for [bind] function.
+ * @exportedAs angular2/di
  */
 export class BindingBuilder {
   token;
